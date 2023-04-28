@@ -23,19 +23,21 @@ The system supports each of these cases. It operates by presenting a login-page 
 Once the user's identity has been established and validated against the PodBrowser's access control rules the PDF is then rendered by the FileOpen viewer system. This process involves a number of steps:
 
 * Real-time delivery of a PDF viewer into the user's browser and then of the encrypted PDF into that environment.
-* Interaction from within the browser with a secondary server (the ermissionServer to obtain the decryption key for that PDF and a set of rules governing access. 
+* Interaction from within the browser with a secondary server (the _PermissionServer_) to obtain the decryption key for that PDF and a set of rules governing access. 
 * Client-side decryption and rendering of the PDF, with user/document specific watermarking and dynamic control over UI and usage.
 
 This approach prevents capture of a usable PDF from the communication channel or the browser-context and ensures that each document-open event is under the control of the Pod owner. 
 The FileOpen Viewer system also supports a variety of fine-grained controls over expiration, concurrent usage, watermarking, etc.
-Limitations of this Implementation:
+
+
+## Limitations of this Implementation:
 
 * In this version the encryption of the PDF itself is done outside of the demo, i.e. prior to the PDF being uploaded to PodBrowser. In a fully developed system the ability to encrypt PDFs would be exposed from within the PodBrowser interface or via a separate upload utility.
 * This version renders all PDFs as read-only documents without the option to download. In a complete system the document owner would be given control over the end-user experience, i.e. could enable editing, downloading, etc. 
 
 
 
-[^1]: We recognize that Solid in general and PodBrowser in particular are not designed to control objects once extracted (cf the prescient comment from timbl  in this thread), but nevertheless believe that there are important use cases, especially in regulated industries, for post-distribution control and usage tracking within the Inrupt ESS ecosystem.
+[^1]: We recognize that Solid in general and PodBrowser in particular are not designed to control objects once extracted (cf the prescient comment from timbl [in this thread](https://forum.solidproject.org/t/can-i-restrict-where-users-data-can-go/5555/4)), but nevertheless believe that there are important use cases, especially in regulated industries, for post-distribution control and usage tracking within the Inrupt ESS ecosystem.
 
 
 
