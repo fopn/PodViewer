@@ -33,9 +33,15 @@ The FileOpen Viewer system also supports a variety of fine-grained controls over
 ## Limitations of this Implementation:
 
 * In this version the encryption of the PDF itself is done outside of the demo, i.e. prior to the PDF being uploaded to PodBrowser. In a fully developed system the ability to encrypt PDFs would be exposed from within the PodBrowser interface or via a separate upload utility.
-* This version renders all PDFs as read-only documents without the option to download. In a complete system the document owner would be given control over the end-user experience, i.e. could enable editing, downloading, etc. 
+* This version renders all PDFs as read-only documents without the option to download. In a complete system the document owner would be given control over the end-user experience, i.e. could enable editing, downloading, etc.
 
+## Video Explanation
 
+https://user-images.githubusercontent.com/19676307/235811105-4615b605-15ed-4b3e-a4aa-4b893659f874.mp4
+
+# Video Link
+
+https://www.dropbox.com/s/0ks3ue7u0osi9rh/FileOpen%20PodViewer.mp4?dl=0
 
 [^1]: We recognize that Solid in general and PodBrowser in particular are not designed to control objects once extracted (cf the prescient comment from timbl [in this thread](https://forum.solidproject.org/t/can-i-restrict-where-users-data-can-go/5555/4)), but nevertheless believe that there are important use cases, especially in regulated industries, for post-distribution control and usage tracking within the Inrupt ESS ecosystem.
 
